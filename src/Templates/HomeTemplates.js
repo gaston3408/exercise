@@ -7,6 +7,7 @@ const HomeTemplates = ({data, title}) => {
             <Card
                 data={data}
                 title={title}
+                className={data > 2000 ? "fondo" : ""}
             />
         </>
     )

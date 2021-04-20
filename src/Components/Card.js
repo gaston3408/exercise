@@ -1,7 +1,7 @@
 import React from 'react'
 import Reloj from './Reloj'
 
-const Card = ({data, title, index = 0}) => {
+const Card = ({data, title, index = 0, className = ""}) => {
     return (
         <>
             <h2 style={{marginTop: 30}}>{title}</h2>
@@ -9,6 +9,7 @@ const Card = ({data, title, index = 0}) => {
                     <Reloj
                         medition={data}
                         index={index}
+                        className={className}
                     />
                 </div>
         </>
